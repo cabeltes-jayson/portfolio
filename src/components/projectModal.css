@@ -1,0 +1,94 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Increased width for better layout */
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow title to take available space */
+    text-align: center; /* Center the title */
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .close-button:hover {
+    color: #00bcd4;
+  }
+  
+  .modal-body {
+    display: flex; /* Use flexbox for two-column layout */
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 20px; /* Add space above the body */
+    justify-content: space-between; /* Distribute space between text and image */
+}
+
+.modal-text {
+    flex: 0.9;
+    /* margin-right: 20px;  */
+    /* max-width: 300px;  */
+}
+
+.project-image {
+    width: 400px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+  .full-description,
+  .description {
+    margin: 20px 0;
+    text-align: justify; 
+  }
+  
+  .nav-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .nav-button.left {
+    left: -40px;
+  }
+  
+  .nav-button.right {
+    right: -40px;
+  }
+  
+  .nav-button:hover {
+    color: #00bcd4;
+  }

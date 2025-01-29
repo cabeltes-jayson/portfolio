@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/me.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import "./banner.css";
 import 'animate.css';
 
 export const Banner = () => {
@@ -56,7 +57,7 @@ export const Banner = () => {
             <div>
               {/* <span className="tagline">Welcome to my Portfolio</span> */}
               <h1 id="greeting">{`Hi! I'm Jayson, a `} 
-                <div className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-End Developer", "Back-End Developer", "Handsome Guy" ]'>
+              <div className="txt-rotate" data-period="1000" data-rotate='[ "Front-End Developer", "Back-End Developer", "Handsome Guy" ]'>
                   <span className="wrap">{text}</span>
                 </div>
               </h1>
